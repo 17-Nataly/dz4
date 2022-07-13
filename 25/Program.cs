@@ -4,20 +4,13 @@
 
 
 
-/*double usePow(int A, int B)
-{
-    double result = Math.Pow(A, B);
 
-    return result;
-}
-
-double a = usePow(A, B);*/
-
-
-Console.WriteLine("Введите число А: ");
-int A = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Введите число B: ");
-int B = Convert.ToInt32(Console.ReadLine());
-
-
-Console.WriteLine("A^B = " + Math.Pow(A, B));
+Console.Write("Введите число   : ");
+  int num = Convert.ToInt32(Console.ReadLine());
+  Console.Write("Введите степень : ");
+  int n = Convert.ToInt32(Console.ReadLine());
+    int num_n=1;
+  for(int i=0; i<n; i++) {
+   num_n*=num;
+  }
+  Console.WriteLine("{0} ^ {1} = {2}", num, n, num_n);
